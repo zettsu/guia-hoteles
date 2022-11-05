@@ -1,0 +1,22 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Nuestro primer proyecto nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zettsu/guia-hoteles.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Matias Olivera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zettsu/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/zettsu/guia-hoteles#readme"
+}
