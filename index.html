@@ -47,20 +47,39 @@
                     <li class="breadcrumb-item active" aria-current="page">Home</li>
                 </ol>
             </nav>
+            <div class="row pl-5 pr-5 mr-5 ml-5 mb-5">
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary w-75" id="prices-collapse" data-bs-toggle="collapse" data-bs-target="#price" role="tab" aria-controls="price" aria-selected="false">
+                        Es gratis?
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary w-75" id="how-collapse" data-bs-toggle="collapse" data-bs-target="#how" role="tab" aria-controls="how" aria-selected="false">
+                        Como se usa?
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-primary w-75" id="how-it-works-collapse" data-bs-toggle="collapse" data-bs-target="#how-it-works" role="tab" aria-controls="how" aria-selected="false">
+                        Como funciona?
+                    </button>
+                </div>
+            </div>
             <div class="row pl-5 pr-5 mr-5 ml-5">
-                <div class="col-sm-1 col-md-4 col-lg-4">
+                <div class="col-sm-1 col-md-4 col-lg-4 collapse multi-collapse fade" id="price">
                     <h1 class="">¿Tiene costo?</h1>
                     <p class="lead">Es un servicio gratuito, osea que no pagaras ni un penique. No es eso asombroso?</p>
                 </div>
-                <div class="col-sm-1 col-md-4 col-lg-4">
+                <div class="col-sm-1 col-md-4 col-lg-4 collapse multi-collapse fade" id="how">
                     <h2 class="">¿Como lo uso?</h2>
                     <p class="lead">Busca localidades o atracciones basadas en tus intereses, filtra y elige un lugar donde pasar tu siguiente aventura.</p>
                 </div>
-                <div class="col-sm-1 col-md-4 col-lg-4">
+                <div class="col-sm-1 col-md-4 col-lg-4 collapse multi-collapse fade" id="how-it-works">
                     <h2 class="">¿Como funciona?</h2>
                     <p class="lead">Tenemos agentes turisticos que recogen informacion acerca de las localidades y su
                         historia, recopilamos datos de las zonas y detalles sobre cada lugar turistico para lograr una experiencia unica.</p>
                 </div>
+            </div>
+            <div class="row pl-5 pr-5 mr-5 ml-5 mt-5">
                 <img class="img-fluid" src="images/-Game-Of-Thrones-Banner-game-of-thrones-27209673-1600-200.jpg" alt="banner">
                 <hr class="mt-3">
             </div>
