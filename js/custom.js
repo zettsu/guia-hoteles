@@ -2,3 +2,9 @@ let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
     return new bootstrap.Popover(popoverTriggerEl)
 });
+
+var myCarousel = document.querySelector('#carousel')
+var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 4000,
+    wrap: false
+})
