@@ -96,7 +96,7 @@
                         </p>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Ver más</button>
+                        <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modal">Reservar</button>
                     </div>
                 </div>
                 <div class="card customized-card">
@@ -112,7 +112,7 @@
                         </p>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Ver más</button>
+                        <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modal">Reservar</button>
                     </div>
                 </div>
                 <div class="card customized-card">
@@ -123,7 +123,7 @@
                         <p class="card-text">La ciudad se encuentra rodeando un gran puerto. Los volantineses sostienen que cien islas de Braavos pueden entrar en el puerto y desaparecer. Además, la ciudad se extiende a la desembocadura del Rhoyne y a través de las colinas, ocupando ambas riberas.[2]</p>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Ver más</button>
+                        <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modal">Reservar</button>
                     </div>
                 </div>
                 <div class="card customized-card">
@@ -137,7 +137,7 @@
                         </p>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Ver más</button>
+                        <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modal">Reservar</button>
                     </div>
                 </div>
                 <div class="card customized-card">
@@ -148,7 +148,7 @@
                         <p class="card-text">La ciudad se encuentra rodeando un gran puerto. Los volantineses sostienen que cien islas de Braavos pueden entrar en el puerto y desaparecer. Además, la ciudad se extiende a la desembocadura del Rhoyne y a través de las colinas, ocupando ambas riberas.[2]</p>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Ver más</button>
+                        <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modal">Reservar</button>
                     </div>
                 </div>
                 <div class="card customized-card">
@@ -175,7 +175,36 @@
                         <p class="card-text">La ciudad se encuentra rodeando un gran puerto. Los volantineses sostienen que cien islas de Braavos pueden entrar en el puerto y desaparecer. Además, la ciudad se extiende a la desembocadura del Rhoyne y a través de las colinas, ocupando ambas riberas.[2]</p>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-primary">Ver más</button>
+                        <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#modal">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Desea reservar?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-row" onsubmit="return false;">
+                            <div class="form-group col-sm-6 m-2">
+                                <label for="email">Email</label>
+                                <input class="form-control" type="email" id="email" placeholder="Ingrese su email"/>
+                            </div>
+                            <div class="form-group col-sm-8 m-2">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea class="form-control" type="text" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+                            </div>
+                            <div class="form-group m-2">
+                                <div class="form-check">
+                                    <label class="form-check-label" for="newsletter">Desea suscribirse al boletin informativo?</label>
+                                    <input class="form-check-input" type="checkbox" id="newsletter" placeholder=""/>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary m-2"><span class="oi oi-mail-send"></span>Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>
