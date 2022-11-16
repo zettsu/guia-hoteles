@@ -57,7 +57,7 @@
             </a>
         </li>
         <li class="nav-item">
-            <a href="#payment-methods" class="nav-link" id="payment-methods-tab" role="pill" data-bs-toggle="tab" aria-controls="payment-methods" aria-selected="false">
+            <a href="#payment-methods" class="nav-link" id="payment-methods-tab" data-bs-toggle="pill" role="tab" aria-controls="payment-methods" aria-selected="false">
                 Medios de pago
             </a>
         </li>
@@ -139,17 +139,43 @@
         </div>
     </div>
     <div class="tab-content" id="tab-places-content">
-        <div class="tab-pane fade" id="payment-methods" role="tabpanel" aria-labelledby="payment-methods-tab">
-            <div class="d-flex justify-content-center">
-                <div class="card mt-5" style="width: 10rem;">
-                    <div class="card-header" style="background-color: black;color: aliceblue;">
-                        Tarjetas aceptadas
+        <div class="tab-pane fade mt-4" id="payment-methods" role="tabpanel" aria-labelledby="payment-methods-tab">
+            <div class="accordion" id="payments-avaiable">
+                <div class="accordion-item show">
+                    <h2 class="accordion-header" id="basicHeader">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#basic" aria-expanded="true" aria-controls="basic">
+                            Basic
+                        </button>
+                    </h2>
+                    <div id="basic" class="accordion-collapse collapse show" aria-labelledby="basicHeader" data-bs-parent="#payments-avaiable">
+                        <div class="accordion-body">
+                            Hasta 3 cuotas
+                        </div>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Tarjeta basica</li>
-                        <li class="list-group-item">Tarjeta vip</li>
-                        <li class="list-group-item">Tarjeta black</li>
-                    </ul>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="vipHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vip" aria-expanded="false" aria-controls="vip">
+                            Vip
+                        </button>
+                    </h2>
+                    <div id="vip" class="accordion-collapse collapse" aria-labelledby="vipHeader" data-bs-parent="#payments-avaiable">
+                        <div class="accordion-body">
+                            Hasta 6 cuotas
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="blackHeader">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#black" aria-expanded="true" aria-controls="black">
+                            Black
+                        </button>
+                    </h2>
+                    <div id="black" class="accordion-collapse collapse" aria-labelledby="blackHeader" data-bs-parent="#payments-avaiable">
+                        <div class="accordion-body">
+                            Hasta 12 cuotas
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
