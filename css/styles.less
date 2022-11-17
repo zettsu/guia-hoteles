@@ -1,0 +1,37 @@
+@red:tomato;
+@green:green;
+@yellow: #fcba03;
+
+.margin(@top:0px, @bottom:0px) {
+  margin-bottom: @bottom;
+  margin-top: @top;
+}
+
+.jumbotron {
+  background-color: @yellow;
+  padding: 10px;
+  .margin(50px, 10px)
+}
+
+.customized-card {
+  flex: 1 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px 0px 2px 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: @red;
+}
+
+.customized-card > div > .btn {
+  border-radius: 0;
+  width: 100%;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 10px;
+  background-color: @red;
+}
