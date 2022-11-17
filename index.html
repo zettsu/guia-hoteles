@@ -209,6 +209,9 @@
                         <h5 class="card-title">El Puerto</h5>
                         <h6 class="card-subtitle text-muted">Volantis</h6>
                         <p class="card-text">La ciudad se encuentra rodeando un gran puerto. Los volantineses sostienen que cien islas de Braavos pueden entrar en el puerto y desaparecer. Además, la ciudad se extiende a la desembocadura del Rhoyne y a través de las colinas, ocupando ambas riberas.[2]</p>
+                        <div>
+                            <button id="btnContact" type="button" class="btn btn-success btn-reserva" data-bs-toggle="modal" data-bs-target="#contact">Contacto</button>
+                        </div>
                     </div>
                     <div class="m-2">
                         <button type="button" class="btn btn-link" data-bs-toggle="popover" title="Promociones 2x1" data-bs-content="Promociones 2x1 para los primeros 100 aventureros que reserven una suite.">Mas informacion</button>
@@ -241,6 +244,29 @@
                                     <label class="form-check-label" for="newsletter">Desea suscribirse al boletin informativo?</label>
                                     <input class="form-check-input" type="checkbox" id="newsletter" placeholder=""/>
                                 </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary m-2"><span class="oi oi-mail-send"></span>Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Quieres que te contactemos?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-row" onsubmit="return false;">
+                            <div class="form-group col-sm-6 m-2">
+                                <label for="email-to-contact">Email</label>
+                                <input class="form-control" type="email" id="email-to-contact" placeholder="Ingrese su email"/>
+                            </div>
+                            <div class="form-group col-sm-8 m-2">
+                                <label for="message">Mensaje (Opcional)</label>
+                                <textarea class="form-control" type="text" id="message" placeholder="Ingrese su mensaje"></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary m-2"><span class="oi oi-mail-send"></span>Enviar</button>
                         </form>
