@@ -1,13 +1,18 @@
-let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-popoverTriggerList.map(function (popoverTriggerEl) {
-    return new bootstrap.Popover(popoverTriggerEl);
-});
+console.log()
+if (document.querySelectorAll('[data-bs-toggle="popover"]').length > 0) {
+    let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+    popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+    });
+}
 
-let myCarousel = document.querySelector('#carousel');
-new bootstrap.Carousel(myCarousel, {
-    interval: 4000,
-    wrap: false
-});
+if (document.querySelector('#carousel') !== null) {
+    let myCarousel = document.querySelector('#carousel');
+    new bootstrap.Carousel(myCarousel, {
+        interval: 4000,
+        wrap: false
+    });
+}
 
 let modalContact = $("#contact");
 let btnContact = $("#btnContact");
