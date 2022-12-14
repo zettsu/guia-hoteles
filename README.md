@@ -1,2 +1,3 @@
-# guia-turistica
-Guia de hoteles, proyecto para Austral usando bootstrap 5
+# Seven kingdom turistic guide
+
+Project based on Austral Bootstrap 5 course
